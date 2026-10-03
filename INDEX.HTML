@@ -1,30 +1,276 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>PimpimBites</title>
-        <meta name="description" content="Petiscos mágicos que possibilitam poderes momentâneos, mas memórias eternas."
-    </head>
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PimpimBites - Biscoitos Mágicos</title> 
+    <meta name = "description" content="Petiscos mágicos que possibilitam poderes momentâneos, mas memórias eternas."> 
+</head>
 
-    <body>
-        <header>
-            <h1>PimpimBites</h1>
-            <p><strong>Petiscos mágicos</strong> que possibilitam poderes momentâneos, mas <strong>memórias eternas</strong>.</p>
+<body> 
+    <header class="navbar"> 
+        <div class = "logo">Pimpim<span>Bites</span></div>
+
+        <nav> 
+            <ul class="menu"> 
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#novidades">Novidades</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li> 
+                <li><a href="#noticias">Notícias</a></li> 
+            </ul>
+        </nav>          
+        <a href="#carrinho" class="carrinho"> <span class="icone">🛒</span> <span class="contador">0</span>
+        </a>
+
         </header>
-        <main>
-            <!--propaganda/slogan-->
-            <section>
-                <h2>Propaganda.</h2>
-                <p>Quantas vezes você já se imaginou conversando com o seu pet ou até com um animal selvagem? Garanto que inúmeras. Mas agora o seu desejo virou realidade. <br>
-                Combinando uma receita que veio diretamente do mundo das fadas com uma boa dose de ciência, desenvolvemos petiscos exclusivos para humanos que liberam a fala com a espécie desejada em menos de 30 segundos.
-                E não: não é como quando você, num momento de surto, fala sozinho com seu cachorro torcendo para ele te entender. Dessa vez, vocês realmente vão conversar.
-                </p>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-conteudo">
+                <h1>Descubra os chocolates mágicos PimPim<span>Bites</span></h1>
+                <p>Chega de falar sozinho com o seu pet,experimente sabores únicos que despertam seu papo animal.</p>
+                <div class="hero-botoes">
+                <a href="#sabores" class="btn1">Garantir minha mordia</a>
+                <a href="#sobre-nos" class="btn2">Como funciona</a>
+                </div>
+            </div>
+            <div class="hero-midia">
+                <video controls width="100%" poster="assets/thumb-video.jpg">
+                    <source src="assets/propaganda.mp4" type="video/mp4">
+                </video>  
+            </div>
+            </section>
+        <section id="sabores" class="sabores-section">
+            <div class="topo-section">
+                <h2>Nossos Sabores Mágicos</h2>
+                <p>Explore nosso catálogo dividido por reinos do mundo animal.</p>
+            </div>  
+            <div class="animais-domesticos">
+                <div class="titulo-categoria">
+                    <h3>Animais domésticos </h3>
+                    <p>Para quem quer finalmente entender o que acontece dentro de casa.</p>
+                </div>
+
+                <div class="grid-produtos">
+                <!-- Card cachorro -->
+                    <article class="card-produto">
+                        <h4>PimpimBites Cães</h4>
+                        <p>Sabor Carne Ao Molho Mágico. Saiba agora o que o seu melhor amigo tem para te dizer a anos.</p>
+                        <img src="assets/thumb-video.jpg">
+                        <span class="preco">R$54,99</span>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+
+                <!-- Card Gato -->
+                    <article class="card-produto">
+                        <h4>PimpimBites Gatos</h4>
+                        <p>Sabor Salmão Estelar. Entenda a ironia e as exigências do seu felino.</p>
+                        <img src="assets/biscoito-felino.jpg">
+                        <span class="preco">R$ 54,90</span>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+                </div>
+            </div>
+            <div class="animais-marinhos">
+                <div class="titulo-categoria">
+                    <h3>Animais Marinhos</h3>
+                    <p>Conecte-se com as criaturas dos mares na sua próxima viagem à praia.</p>
+                </div>
+
+                <div class="grid-produtos">
+                    <!--tubarao-->
+                        <article class="card-produto">
+                            <h4>PimpimBites Tubarão</h4>
+                            <p>Sabor Abissal. Descubra que eles só querem um abraço (mas não arrisque).</p>
+                            <img src="assets/biscoito-tubarao.jpg">
+                            <span class="preco">R$79,90</span>
+                            <button class="btn-comprar">Adicionar ao carrinho</button>
+                        </article>
+                    <!--peixes-->
+                        <article class="card-produto">
+                        <h4>PimpimBites Peixes</h4>
+                        <p>Sabor Algas do Atlântico. Converse com os peixinhos do aquário ou da praia.</p>
+                        <img src="assets/biscoito-peixes.jpg">
+                        <span class="preco">64,90</span>
+                        <button clas="btn-comprar">Adicionar ao carrinho</button>
+                        </article>   
+                    <!--golfinho--> 
+                        <article class="card-produto">
+                            <h4>PimpimBites Golfinho</h4>
+                            <p>Sabor Maresia Mágica. Decodifique os cliques e assobios para ouvir as melhores fofocas e piadas do oceano em tempo real.</p>
+                            <span class="preco">R$64,90</span>
+                            <img src="assets/biscoito-golfinho.jpg">
+                            <button class="btn-comprar">Adicione ao carrinho</button>
+                            
+                        </article>
+                </div>
+            </div>
+            <div class="animais-selvagens">
+                <div class="categoria-titulo">
+                    <h3>Animais da Savana</h3>
+                    <p>Para bater um papo no safari, no zoológico ou numa grande aventura na natureza.</p>
+                </div>
+
+                <div class="grid-produtos">
+                    
+                    <!-- Card Leão -->
+                    <article class="card-produto">
+                        <h4>PimpimBites Leões</h4>
+                        <p>Sabor Carne da Savana Mística. Descubra se ele está realmente reinando ou apenas procurando o lugar ideal para a 18ª soneca do dia.</p>
+                        <img src="assets/biscoito-leao.jpg">
+                        <span class="preco">R$ 74,90</span>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+
+                    <!-- Card Elefante -->
+                    <article class="card-produto">
+                        <h4>PimpimBites Elefantes</h4>
+                        <p>Sabor Amendoim do Baobá. Aproveite a famosa memória de elefante para ouvir histórias incríveis de quem nunca esquece nada.</p>
+                        <img src="assets/biscoito-elefante.jpg">
+                        <span class="preco">R$ 84,90</span>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+
+                    <!-- Card Girafa -->
+                    <article class="card-produto">
+                        <h4>PimpimBites Girafas</h4>
+                        <p>Sabor Broto de Acácia & Nuvens. Bata um papo com quem vê a vida de outro ângulo e saiba todas as fofocas do topo das árvores.</p>
+                        <img src="assets/biscoito-girafa.jpg">
+                        <span class="preco">R$ 69,90</span>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+
+                </div>
+            </div>
+
             </section>
 
-            <section
+        <section id="novidades" class="novidades-section">
+            <div class="pre-venda">
+                <div class="pre-venda_titulo">
+                    <h3>Pré-venda⏳</h3>
+                    <h4>Animais Voadores</h4>
+                    <p>Agora você mesmo sem conseguir voar vai conseguir se sentir parte do reino dos céus.<p>
+                    
+                    </div>
+                <div class="grid-produto_pre-venda">
+                        <article class="card-produto">
+                            <h4>PimpimBites Passarinhos</h4>
+                            <p>Sabor Alpiste Celestial. Traduz os fius-fius em tempo real e saiba todas as fofocas da vizinhança vistas do alto.</p>
+                            <img src="assets/biscoito-passarinho.jpg">
+                            <span class="preco">R$54,90</span>
+                            <button class="btn-comprar">Garantir na pré-venda</button>
+                            </article>
+                        <article class="card-produto">
+                            <h4>PimpimBites Morcegos</h4>
+                            <p>Sabor Sangue (100% Sintético). Traduz a frequência ultrassônica para você entender por que ele jura que "é a noite" e quer salvar Gotham antes do amanhecer.</p>
+                            <img src="assets/bisocito-morcego.jpg">
+                            <span class="preco">R$54,90</span>
+                            <button class="btn-comprar">Garantir na pré-venda</button>
+                            </article>
+            <div class="grid-produtos_mais-vendidos">
+                <div class="mais-vendidos_titulo">
+                    <h3>Os campeões de venda de cada reino</h3>
+                <article class="card-domestico">
+                    <span class="badge">O #1 dos domésticos</span>
+                    <h4>PimpimBites Cães</h4>
+                    <p>Sabor Carne Ao Molho Mágico. Saiba agora o que o seu melhor amigo tem para te dizer a anos.</p>
+                    <img src="assets/thumb-video.jpg">
+                    <span class="preco">R$54,99</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+                <article class="card-marinho">
+                    <span class="badge">O #1 dos marinhos</span>
+                    <h4>PimpimBites Tubarão</h4>
+                    <p>Sabor Abissal. Descubra que eles só querem um abraço (mas não arrisque).</p>
+                    <img src="assets/biscoito-tubarao.jpg">
+                    <span class="preco">R$79,90</span>
+                    <button class="btn-comprar">Adicionar ao carrinho</button>
+                    </article>
+                <artcile class="card-savana">
+                    <span class="badge">O #1 da savana</span>
+                    <h4>PimpimBites Leões</h4>
+                    <p>Sabor Carne da Savana Mística. Descubra se ele está realmente reinando ou apenas procurando o lugar ideal para a 18ª soneca do dia.</p>
+                    <img src="assets/biscoito-leao.jpg">
+                    <span class="preco">R$ 74,90</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </article>
+                </section>
+        <section id="noticias" class="noticias-mundo-animal">
+            <div class="mundo-animal-titulo">
+            <h3>Radar Animal: O Que Eles Andam Aprontando</h3>
+            <div class="noticia-01">
+                <h4>titulo da materia</h4>
+                <p>manchete da materia<p>
+                <a href="https://site-de-destino.com" target="_blank">
+                    <img src="assets/imagem.jpg">
+                </a>
+            <div class="noticia-02">
+                <h4>titulo da materia</h4>
+                <p>manchete da materia<p>
+                <a href="https://site-de-destino.com" target="_blank">
+                    <img src="assets/imagem.jpg">
+                </a>
+            <div class="noticia-03">
+               <h4>titulo da materia</h4>
+                <p>manchete da materia<p>
+                <a href="https://site-de-destino.com"   target="_blank">
+                    <img src="assets/imagem.jpg">
+                     </a>
+            </section>
+        <section id="avaliacoes" class="avaliacoes-aba">
+            <div class="apresentacao-avaliacao">
+                <h3>Aprovado por mais de 3 milhões de animais</h3>
+                <p>Avaliações reais feitas por animais(e seus donos)</p>
+            <div class="grid-avaliacoes">
+                <div class="av1">
+                     <img src="assets/av1.png">
+                    <p>"Já faz quase 2 anos que nosso humano compra os petiscos mensalmente... Os petiscos deixam ele mais legal."</p>
+                    <p>★★★★★</p>
+                    <h4>Pedro H.</h4>
+                <div class="av2">
+                    <img src="assets/av2.jpg">
+                    <p>"Felizmente, a PimPimBites não pesa no meu bolso, e ele recebe novos petiscos todos os meses!"</p>
+                    <p>★★★★★</p>
+                    <h4>Enzo M.</h4>
+                <div class="av3">
+                     <img src="assets/av3.jpg">
+                    <p>"O serviço de atendimento ao cliente nos ajudou a trocar os sabores em minutos."</p>
+                    <p>★★★★★</p>
+                    <h4>Alice A.</h4>
+            <div class="pq-escolher-pimpim">
+                <h3>Por que escolher a PimPimBites?</h3>
+                <p>A BarkBox é uma surpresa mensal que traz alegria e enriquecimento para a vida do seu cãozinho.</p>
+                <img src="assets/ft1.png">
+                <h4>Obsessão garantida</h4>
+                <p>Repleto de sabores irresistiveis, projetados e selecionados a dedo por especialistas e fadas.</p>
+                <img src="assets/ft2.png">
+                <h4>Conveniência absurda</h4>
+                <p>Entregamos a diversão perfeita diretamente na sua porta em dias.</p>
+                <img src="assets/ft3.png">
+                <h4>Traduções personalizadas</h4>
+                <p>Personalizado — desde negociar mais meia hora de sono com seu passarinho até entender os pedidos mais específicos do seu cão ou gato.</p>
+        <section id="sobre-nos" class="sobre-nos-section">
+            <div class="inicio-sobre-nos">
+                <h4>Nossa história</h4>
+                <h3>Como tudo começou</h3>
+                </div>
+            <div class="sobre-nos_historia">
+                <h4>A história da Pimpim Bites não começou neste mundo. Tudo teve início quando a Dra. Pimpim atravessou o portal do Reino das Fadas com uma missão especial: trazer a magia do seu universo para a vida dos nossos animais de estimação.</h4>
+                <h4>Ao chegar aqui, o destino cruzou seu caminho com o da Senhorita Puff, uma talentosa confeiteira e veterinária apaixonada pelo bem-estar animal. Dessa união extraordinária surgiu a receita perfeita: o rigor da ciência veterinária, o afeto da alta confeitaria artesanal e, claro, um toque secreto do mais puro pó de fada.</h4>
+                <h4>Foi assim que nasceu a Pimpim Bites. Muito além de petiscos, criamos porções diárias de alegria, saúde e encanto para transformar o momento do seu pet em um ritual verdadeiramente mágico.</h4>
+                </div>
+            <div class="nossas-redes">
+                <h3>Nossas redes sociais</h3>
+                <h4>Instagram</h4>
+                <a href="https://site-de-destino.com" target="_blank">
+                    <img src="assets/instagram.jpg">
+                    </a>
+                <h4>Nosso número para contato</h4>
+                <p>+55 75-98218-7857</p>
+                <img src="assets/wpp.jpg">
+
         </main>
-        <footer></footer>
-    </body>
-
-
-
+</body>
 </html>
