@@ -1,3 +1,22 @@
+const themeToggle = document.querySelector('#theme-toggle');
+const savedTheme = localStorage.getItem('theme');
+
+function setTheme(theme) {
+  const isDark = theme === 'dark';
+
+  document.body.dataset.theme = isDark ? 'dark' : 'light';
+  themeToggle.textContent = isDark ? 'Tema claro' : 'Tema escuro';
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+}
+
+setTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+  setTheme(nextTheme);
+  localStorage.setItem('theme', nextTheme);
+});
+
 // Seleciona o elemento do trilho que contém os cards
 const track = document.querySelector('.carousel-track');
 

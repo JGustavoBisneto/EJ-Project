@@ -15,9 +15,18 @@
 
         <nav>
             <ul class="menu">
-                <li><a href="#sabores">Sabores</a></li>
+                <li class="dropdown">
+                <a href="#sabores" class="dropdown-link">Sabores ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#domesticos">Domesticos</a></li>
+                    <li><a href="#marinhos">Marinhos</a></li>
+                    <li><a href="#savana">Savana</a></li>
+                    <li><a href="#voadores">Voadores</a></li>
+                </ul>
+            </li>
                 <li><a href="#noticias">Notícias</a></li>
                 <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Tema escuro</button></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +49,7 @@
         <section id="sabores" class="sabores-section">
                 <h2 class="titulo-sabores">Nossos Sabores Mágicos</h2>
                 <p class="t2">Explore nosso catálogo dividido por reinos do mundo animal.</p>
-            <div class="animais-domesticos">
+            <section id="domesticos" class="animais-domesticos">
                 <div class="titulo-categoria">
                     <h3>Animais domésticos </h3>
                     <p>Para quem quer finalmente entender o que acontece dentro de casa.</p>
@@ -61,7 +70,7 @@
                         <span class="preco">Disponível em breve</span>                    
                     </button>
                 </div>
-            </div>
+            </section>
             <div class="animais-marinhos">
                 <div class="titulo-categoria">
                     <h3>Animais Marinhos</h3>
