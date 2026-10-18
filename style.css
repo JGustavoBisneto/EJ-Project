@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Chewy&family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+body{
+    background-color: #f4f0ea; 
+    color: #0f0352;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+/* Container principal do cabeçalho */
+header {
+  display: flex; /* Ativa o layout flexível */
+  align-items: center; /* Alinha a logo e os links verticalmente ao centro */
+  justify-content: space-between; /* Empurra a logo para a extrema esquerda e o menu para a extrema direita */
+  padding: 1rem 3rem; /* Espaçamento interno: 1rem em cima/baixo e 3rem nas laterais */
+  background-color: #3d0981; /* Cor de fundo roxa */
+  color: #f4f0ea; /* Cor do texto padrão */
+  position: fixed; /* Fixa o menu no topo da tela durante a rolagem */
+  top: 0; /* Cola o topo no limite superior */
+  left: 0; /* Cola a lateral esquerda no limite da tela */
+  width: 100%; /* Faz o header ocupar toda a largura da tela */
+  z-index: 1000; /* Garante que o menu fique por cima de qualquer outro elemento da página */
+}
+
+/* Estilização da Logo */
+.logo {
+  font-family: "Chewy", system-ui; /* Fonte personalizada da logo com fallback */
+  font-size: 2.5rem; /* Tamanho do texto da logo */
+  line-height: 1; /* Mantém a altura da linha justa para não empurrar o header */
+}
+
+/* Lista de links de navegação */
+nav ul {
+  display: flex; /* Alinha os itens da lista lado a lado */
+  gap: 2rem; /* Espaço de 2rem entre cada link do menu */
+  list-style: none; /* Remove as bolinhas padrão da lista HTML */
+  align-items: center; /* Garante que os itens fiquem alinhados ao centro */
+}
+
+/* Estilização dos links */
+nav a {
+  color: #ffffff; /* Cor branca para o texto dos links */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  font-size: 1rem; /* Tamanho legível para links de menu (16px) */
+  font-weight: 500; /* Deixa o texto levemente mais destacado */
+  transition: color 0.3s ease; /* Animação suave para a troca de cor no hover */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+  color: #ffca28; /* Cor amarela/dourada que contrasta muito melhor sobre o fundo roxo */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+video {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border-radius: 0.5rem; 
+    border: 0.5rem solid #f7f7f3;
+    display: block;
+}   
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4rem 8%;
+}
+.hero-titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 4.1rem;
+    font-weight: 800;
+    color:#010531;
+    line-height: 1.05;
+    max-width: 22rem;
+    margin-bottom:0.7rem;
+}
+
+.hero-subtitulo{
+    font-family: "Cabin", sans-serif;
+    color: #505050;
+    font-size: 1.05rem;
+    margin-bottom:0.7rem;
+
+}
+.texto-laranja{
+    color: #d96b52;
+}
+.hero-botoes{
+    display:flex;
+    gap:1.5rem;
+}
+.btn1{
+    background-color: #3461f7;
+    color: #ffffff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn1:hover{
+    background-color:rgb(45, 167, 126);
+}
+
+.btn2{
+    background-color: #f0a608;                  
+    color: #ffffff;                             
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease-out;
+}
+.btn2:hover{
+    background-color:rgb(45, 167, 126);
+}
+.sabores-section{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 8%;
+}
+.titulo-sabores{
+    font-family: "Kablammo", system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+.t2{
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem; 
+    color:#505050;
+    margin-bottom:3rem;
+    border-bottom: 0.125rem solid #e2dacd; 
+}
+.animais-domesticos,
+.animais-marinhos,.animais-savana{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.titulo-categoria { 
+    padding-bottom: 0.75rem;
+}
+
+.titulo-categoria h3 {
+    font-family: "Kablammo", system-ui;
+    font-size: 2rem;
+    color: #d96b52;                            
+    margin-bottom: 0.25rem;
+}
+
+.titulo-categoria p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem;
+    color: #0f0352;;
+}
+
+.grid-produtos{
+    display: grid;
+    display:flex;
+    flex-direction: collumn;
+    gap: 1.5rem;
+}
+
+button.card-produto{
+    background-color: #ffffff;                  /* Fundo branco criando a "caixa" */
+    border-radius: 1.25rem;                      /* Cantos arredondados */
+    padding: 1.5rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04); 
+    font-family: inherit;                       /* Força o botão a herdar a fonte do site */
+    cursor: pointer;
+    width: 100%;
+    text-align: left;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.2s ease; 
+    margin-bottom: 1.5rem;
+}
+button.card-produto:hover {
+    transform: translateY(-0.25rem);            /* Efeito de subir ao passar o mouse */
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+button.card-produto h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #1d3a2f;
+    margin-bottom: 0.75rem;
+}
+
+button.card-produto img {
+    width: 100%;
+    height: 11rem;
+    object-fit: contain;                        /* Não distorce a imagem do produto */
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button.card-produto .preco {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color:#d96b52;
+    border-radius:0.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    display: block;
+
+}
+
+/* Define a largura máxima e o alinhamento da seção inteira */
+.noticias-mundo-animal {
+   padding: 4rem 8%;/* Espaçamento interno de segurança em volta da seção */
+}
+
+/* Estiliza o título principal do bloco de notícias */
+.mundo-animal-titulo h3 {
+    text-align: center;
+    font-family: "Kablammo", system-ui;
+  font-size: 3rem; /* Define o tamanho do texto do título */
+  margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+  color: #0f0352;; /* Cor escura para o título externo */
+}
+
+.mundo-animal-titulo p {
+    text-align: center;
+  font-family: "Cabin", sans-serif; /* Fonte secundária para o subtítulo */
+  font-size: 1.2rem; /* Tamanho do texto do subtítulo */
+  color: #505050; /* Cor cinza suave para o subtítulo */
+  margin-bottom: 30px; /* Espaço abaixo do subtítulo */
+}
+
+/* Container do carrossel (a moldura escura estilo a imagem enviada) */
+.carousel-container {
+  position: relative; /* Ponto de referência para elementos posicionados dentro dele */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da moldura */
+  border-radius: 8px; /* Arredonda os cantos da moldura */
+  background-color: #000000; /* Fundo preto idêntico ao modelo da imagem */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra externa suave para dar destaque */
+}
+
+/* Trilho flexível que guarda os cards e desliza na horizontal */
+.carousel-track {
+  display: flex; /* Alinha todos os cards lado a lado horizontalmente */
+  transition: transform 0.6s ease-in-out; /* Anima o deslocamento por 0.6 segundos */
+  width: 100%; /* Largura base total do trilho */
+}
+
+/* Estrutura de cada card de notícia */
+.noticia-card {
+  min-width: 100%; /* Força cada card a ocupar 100% da largura do container */
+  display: flex; /* Divide o card internamente em colunas (imagem e texto) */
+  flex-direction: row; /* Coloca a imagem à esquerda e o texto à direita */
+  align-items: stretch; /* Estica ambos os lados para terem a mesma altura */
+  min-height: 380px; /* Define altura mínima padronizada para os slides */
+}
+
+/* Lado esquerdo: Imagem */
+.noticia-imagem {
+  flex: 1.4; /* Ocupa aproximadamente 58% da largura do card */
+  position: relative; /* Ponto de referência para a imagem interna */
+}
+
+/* Link e imagem interna */
+.noticia-imagem a, 
+.noticia-imagem img {
+  width: 100%; /* A imagem ocupa toda a largura da coluna da esquerda */
+  height: 100%; /* A imagem ocupa toda a altura da coluna da esquerda */
+  object-fit: cover; /* Recorta a imagem sem esticar para preencher o espaço */
+  display: block; /* Remove espaços brancos padrão de elementos inline */
+}
+
+/* Lado direito: Bloco de Texto */
+.noticia-info {
+  flex: 1; /* Ocupa o restante do espaço (aprox. 42% da largura) */
+  padding: 35px 30px; /* Espaçamento interno em volta do texto */
+  display: flex; /* Ativa flexbox interno */
+  flex-direction: column; /* Empilha título, parágrafo e rodapé verticalmente */
+  justify-content: center; /* Centraliza o texto verticalmente no bloco */
+  color: #ffffff; /* Texto em branco idêntico ao modelo */
+  background-color: #000000; /* Fundo preto para o bloco de texto */
+}
+
+/* Título da matéria */
+.noticia-info h4 {
+  font-size: 1.35rem; /* Tamanho do título da notícia */
+  font-weight: 700; /* Texto em negrito destacado */
+  line-height: 1.3; /* Espaçamento entre as linhas do título */
+  margin-bottom: 15px; /* Espaço entre o título e a manchete */
+  color: #ffffff; /* Cor branca pura */
+}
+
+/* Manchete / Descrição curta */
+.noticia-info p {
+  font-size: 0.95rem; /* Tamanho da fonte da manchete */
+  line-height: 1.5; /* Espaçamento legível entre linhas */
+  color: #cccccc; /* Cinza claro para contraste suave com fundo preto */
+  margin-bottom: 20px; /* Espaço abaixo da descrição */
+}
+
+/* Rodapé com fonte e tempo da notícia */
+.noticia-meta {
+  font-size: 0.85rem; /* Fonte menor para informações secundárias */
+  color: #888888; /* Cinza escuro discreto */
+}
+
+/* Container das bolinhas na parte inferior */
+.carousel-indicators {
+  position: absolute; /* Posiciona sobreposto na parte inferior do carrossel */
+  bottom: 12px; /* Distância da borda inferior */
+  width: 100%; /* Largura total para permitir centralizar */
+  display: flex; /* Alinha as bolinhas horizontalmente */
+  justify-content: center; /* Centraliza as bolinhas */
+  gap: 8px; /* Espaço de 8px entre cada bolinha */
+  z-index: 10; /* Mantém as bolinhas acima das imagens e textos */
+}
+
+/* Estilo individual de cada bolinha */
+.indicator {
+  width: 10px; /* Largura da bolinha */
+  height: 10px; /* Altura da bolinha */
+  border-radius: 50%; /* Transforma o elemento em um círculo */
+  border: 1.5px solid #ffffff; /* Borda branca fina */
+  background-color: transparent; /* Fundo transparente quando inativa */
+  cursor: pointer; /* Transforma o ponteiro do mouse em mãozinha */
+  transition: background-color 0.3s, transform 0.2s; /* Animação ao ativar */
+}
+
+/* Bolinha ativa correspondente à notícia em foco */
+.indicator.active {
+  background-color: #ffffff; /* Fundo preenchido em branco */
+  transform: scale(1.2); /* Aumenta levemente a bolinha ativa */
+}
+
+/* Responsividade para telas menores (Celulares) */
+@media (max-width: 768px) {
+  .noticia-card {
+    flex-direction: column; /* Empilha a imagem no topo e o texto abaixo em telas pequenas */
+  }
+  .noticia-imagem {
+    height: 220px; /* Altura fixa da imagem no celular */
+  }
+}
+
+.apresentacao-avaliacao{
+    padding:4rem 8%;
+    align-items:center; 
+}
+
+.grid-avaliacoes{
+    display: flex;
+    flex-direction:row;
+    gap: 1.5rem;
+    padding: 4rem 8%;
+}
+
+.apresentacao-avaliacao h2{
+  font-family: "Kablammo", system-ui;
+  font-size: 4rem; /* Define o tamanho do texto do título */
+  margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+  color: #0f0352;; /* Cor escura para o título externo */
+  text-align: center;
+}
+
+.apresentacao-avaliacao p {
+    text-align: center;
+  font-family: "Cabin", sans-serif; /* Fonte secundária para o subtítulo */
+  font-size: 1.2rem; /* Tamanho do texto do subtítulo */
+  color: #505050; /* Cor cinza suave para o subtítulo */
+  margin-bottom: 1rem; /* Espaço abaixo do subtítulo */
+
+}
+
+.card-avaliacao{
+    display:flex;
+    flex-direction:column;
+    background-color:#fff;
+    border-radius: 1.5rem;
+    border: solid 0.5rem #f4f0ea;
+}
+.card-avaliacao h3{
+    
+    padding:1rem;
+    padding-top:1rem;
+    margin-bottom:2rem;
+}
+.card-avaliacao img{
+    width: 260px; /* A imagem ocupa toda a largura da coluna da esquerda */
+  height: 260px; /* A imagem ocupa toda a altura da coluna da esquerda */
+  object-fit: cover; /* Recorta a imagem sem esticar para preencher o espaço */
+  display: block; /* Remove espaços brancos padrão de elementos inline */
+    border-radius: 1.5rem;
+}
+
+.dep{
+    width: 100%;
+    margin-top: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+/* 1. Estrutura geral do rodapé */
+.rodape {
+  background-color: #28213a; /* Verde escuro */
+  color: #ffffff;
+  padding: 3rem 2rem 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* 2. Container principal (empurra uma coluna pra cada ponta) */
+.bloco-geral {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap; /* Se a tela encolher (celular), as colunas empilham */
+}
+
+/* Títulos das colunas */
+.coluna h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+/* 3. Links de Contato (Gmail e WhatsApp) */
+.item-contato {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.item-contato:hover {
+  opacity: 0.8; /* Efeito visual suave ao passar o mouse */
+}
+
+.item-contato img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* 4. Galeria de imagens das Formas de Pagamento */
+.pagamento-icones {
+  display: flex;
+  gap: 0.6rem;         /* Espaçamento entre cada imagem de pagamento */
+  flex-wrap: wrap;    /* Se forem muitas imagens, quebra linha em telas menores */
+  align-items: center;
+}
+
+.pagamento-icones img {
+  height: 32px;        /* Padroniza a altura de todas as bandeiras */
+  width: auto;         /* Mantém a proporção original */
+  object-fit: contain;
+  border-radius: 4px;  /* Cantos levemente arredondados */
+}
+
+/* 5. Linha de Copyright */
+.rodape-copyright {
+  
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15); /* Linha divisória sutil */
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}

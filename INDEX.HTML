@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
-<head> 
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PimpimBites - Biscoitos Mágicos</title> 
-    <meta name = "description" content="Petiscos mágicos que possibilitam poderes momentâneos, mas memórias eternas."> 
+    <title>PimpimBites - Biscoitos Mágicos</title>
+    <meta name="description" content="Petiscos mágicos que possibilitam poderes momentâneos, mas memórias eternas.">
+    <link rel="stylesheet" href="style.css">    
 </head>
 
-<body> 
-    <header class="navbar"> 
-        <div class = "logo">Pimpim<span>Bites</span></div>
+<body>
+    <header class="navbar">
+        <div class="logo">Pimpim<span>Bites</span></div>
 
-        <nav> 
-            <ul class="menu"> 
+        <nav>
+            <ul class="menu">
                 <li><a href="#sabores">Sabores</a></li>
-                <li><a href="#novidades">Novidades</a></li>
+                <li><a href="#noticias">Notícias</a></li>
                 <li><a href="#avaliacoes">Avaliações</a></li>
-                <li><a href="#nossa-historia">Nossa história</a></li> 
-                <li><a href="#noticias">Notícias</a></li> 
             </ul>
-        </nav>          
-        <a href="#carrinho" class="carrinho"> <span class="icone">🛒</span> <span class="contador">0</span>
-        </a>
-
-        </header>
+        </nav>
+    </header>
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-conteudo">
-                <h1>Descubra os chocolates mágicos PimPim<span>Bites</span></h1>
-                <p>Chega de falar sozinho com o seu pet,experimente sabores únicos que despertam seu papo animal.</p>
+                <h1 class="hero-titulo">Descubra os chocolates PimPim<span class="texto-laranja">Bites</span></h1>
+                <p class="hero-subtitulo">Uma experiência mágica vinda diretamente de outro mundo, com um sabor irresistível e um encanto que só nós podemos proporcionar. Venha experimentar nossos sabores únicos!</p>
                 <div class="hero-botoes">
-                <a href="#sabores" class="btn1">Garantir minha mordia</a>
-                <a href="#sobre-nos" class="btn2">Como funciona</a>
+                    <a href="#sabores" class="btn1">Garantir minha mordia</a>
+                    <a href="#nossa-historia" class="btn2">Nossa História</a>
                 </div>
             </div>
             <div class="hero-midia">
-                <video controls width="100%" poster="assets/thumb-video.jpg">
+                <video controls poster="assets/thumb-video.jpg">
                     <source src="assets/propaganda.mp4" type="video/mp4">
-                </video>  
+                </video>
             </div>
-            </section>
+        </section>
         <section id="sabores" class="sabores-section">
-            <div class="topo-section">
-                <h2>Nossos Sabores Mágicos</h2>
-                <p>Explore nosso catálogo dividido por reinos do mundo animal.</p>
-            </div>  
+                <h2 class="titulo-sabores">Nossos Sabores Mágicos</h2>
+                <p class="t2">Explore nosso catálogo dividido por reinos do mundo animal.</p>
             <div class="animais-domesticos">
                 <div class="titulo-categoria">
                     <h3>Animais domésticos </h3>
@@ -52,23 +47,19 @@
                 </div>
 
                 <div class="grid-produtos">
-                <!-- Card cachorro -->
-                    <article class="card-produto">
+                    <!-- Card cachorro -->
+                    <button class="card-produto">
                         <h4>PimpimBites Cães</h4>
-                        <p>Sabor Carne Ao Molho Mágico. Saiba agora o que o seu melhor amigo tem para te dizer a anos.</p>
-                        <img src="assets/thumb-video.jpg">
-                        <span class="preco">R$54,99</span>
-                        <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
+                        <img src="assets/thumb-video.jpg" alt="Imagem do produto PimpimBites Cães">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
 
-                <!-- Card Gato -->
-                    <article class="card-produto">
+                    <!-- Card Gato -->
+                    <button class="card-produto">
                         <h4>PimpimBites Gatos</h4>
-                        <p>Sabor Salmão Estelar. Entenda a ironia e as exigências do seu felino.</p>
-                        <img src="assets/biscoito-felino.jpg">
-                        <span class="preco">R$ 54,90</span>
-                        <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
+                        <img src="assets/biscoito-felino.jpg" alt="Biscoito PimpimBites para gatos">
+                        <span class="preco">Disponível em breve</span>                    
+                    </button>
                 </div>
             </div>
             <div class="animais-marinhos">
@@ -79,211 +70,226 @@
 
                 <div class="grid-produtos">
                     <!--tubarao-->
-                        <article class="card-produto">
-                            <h4>PimpimBites Tubarão</h4>
-                            <p>Sabor Abissal. Descubra que eles só querem um abraço (mas não arrisque).</p>
-                            <img src="assets/biscoito-tubarao.jpg">
-                            <span class="preco">R$79,90</span>
-                            <button class="btn-comprar">Adicionar ao carrinho</button>
-                        </article>
+                    <button class="card-produto">
+                        <h4>PimpimBites Tubarão</h4>
+                        <img src="assets/biscoito-tubarao.jpg" alt="Biscoito PimpimBites para tubarão">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
                     <!--peixes-->
-                        <article class="card-produto">
+                    <button class="card-produto">
                         <h4>PimpimBites Peixes</h4>
-                        <p>Sabor Algas do Atlântico. Converse com os peixinhos do aquário ou da praia.</p>
-                        <img src="assets/biscoito-peixes.jpg">
-                        <span class="preco">64,90</span>
-                        <button clas="btn-comprar">Adicionar ao carrinho</button>
-                        </article>   
-                    <!--golfinho--> 
-                        <article class="card-produto">
-                            <h4>PimpimBites Golfinho</h4>
-                            <p>Sabor Maresia Mágica. Decodifique os cliques e assobios para ouvir as melhores fofocas e piadas do oceano em tempo real.</p>
-                            <span class="preco">R$64,90</span>
-                            <img src="assets/biscoito-golfinho.jpg">
-                            <button class="btn-comprar">Adicione ao carrinho</button>
-                            
-                        </article>
+                        <img src="assets/biscoito-peixes.jpg" alt="Biscoito PimpimBites para peixes">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
+                    <!--golfinho-->
+                    <button class="card-produto">
+                        <h4>PimpimBites Golfinho</h4>
+                        <img src="assets/biscoito-golfinho.jpg" alt="Biscoito PimpimBites para golfinho">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
                 </div>
             </div>
-            <div class="animais-selvagens">
-                <div class="categoria-titulo">
+            <div class="animais-savana">
+                <div class="titulo-categoria">
                     <h3>Animais da Savana</h3>
                     <p>Para bater um papo no safari, no zoológico ou numa grande aventura na natureza.</p>
                 </div>
 
                 <div class="grid-produtos">
-                    
                     <!-- Card Leão -->
-                    <article class="card-produto">
+                    <button class="card-produto">
                         <h4>PimpimBites Leões</h4>
-                        <p>Sabor Carne da Savana Mística. Descubra se ele está realmente reinando ou apenas procurando o lugar ideal para a 18ª soneca do dia.</p>
-                        <img src="assets/biscoito-leao.jpg">
-                        <span class="preco">R$ 74,90</span>
-                        <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
+                        <img src="assets/biscoito-leao.jpg" alt="Biscoito PimpimBites para leões">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
 
                     <!-- Card Elefante -->
-                    <article class="card-produto">
+                    <button class="card-produto">
                         <h4>PimpimBites Elefantes</h4>
-                        <p>Sabor Amendoim do Baobá. Aproveite a famosa memória de elefante para ouvir histórias incríveis de quem nunca esquece nada.</p>
-                        <img src="assets/biscoito-elefante.jpg">
-                        <span class="preco">R$ 84,90</span>
-                        <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
+                        <img src="assets/biscoito-elefante.jpg" alt="Biscoito PimpimBites para elefantes">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
 
                     <!-- Card Girafa -->
-                    <article class="card-produto">
+                    <button class="card-produto">
                         <h4>PimpimBites Girafas</h4>
-                        <p>Sabor Broto de Acácia & Nuvens. Bata um papo com quem vê a vida de outro ângulo e saiba todas as fofocas do topo das árvores.</p>
-                        <img src="assets/biscoito-girafa.jpg">
-                        <span class="preco">R$ 69,90</span>
-                        <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
+                        <img src="assets/biscoito-girafa.jpg" alt="Biscoito PimpimBites para girafas">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
 
                 </div>
             </div>
+            <div class="animais-voadores">
+                <div class="titulo-categoria">
+                    <h3>Animais Voadores</h3>
+                    <p>Para bater um papo no safari, no zoológico ou numa grande aventura na natureza.</p>
+                </div>
 
-            </section>
+                <div class="grid-produtos">
+                    <!-- Card passarinhos -->
+                    <button class="card-produto">
+                        <h4>PimpimBites Passarinhos</h4>
+                        <img src="assets/biscoito-passarinho.jpg" alt="Biscoito PimpimBites para passarinhos">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
 
-        <section id="novidades" class="novidades-section">
-            <div class="pre-venda">
-                <div class="pre-venda_titulo">
-                    <h3>Pré-venda⏳</h3>
-                    <h4>Animais Voadores</h4>
-                    <p>Agora você mesmo sem conseguir voar vai conseguir se sentir parte do reino dos céus.<p>
-                    
-                    </div>
-                <div class="grid-produto_pre-venda">
-                        <article class="card-produto">
-                            <h4>PimpimBites Passarinhos</h4>
-                            <p>Sabor Alpiste Celestial. Traduz os fius-fius em tempo real e saiba todas as fofocas da vizinhança vistas do alto.</p>
-                            <img src="assets/biscoito-passarinho.jpg">
-                            <span class="preco">R$54,90</span>
-                            <button class="btn-comprar">Garantir na pré-venda</button>
-                            </article>
-                        <article class="card-produto">
-                            <h4>PimpimBites Morcegos</h4>
-                            <p>Sabor Sangue (100% Sintético). Traduz a frequência ultrassônica para você entender por que ele jura que "é a noite" e quer salvar Gotham antes do amanhecer.</p>
-                            <img src="assets/bisocito-morcego.jpg">
-                            <span class="preco">R$54,90</span>
-                            <button class="btn-comprar">Garantir na pré-venda</button>
-                            </article>
-            <div class="grid-produtos_mais-vendidos">
-                <div class="mais-vendidos_titulo">
-                    <h3>Os campeões de venda de cada reino</h3>
-                <article class="card-domestico">
-                    <span class="badge">O #1 dos domésticos</span>
-                    <h4>PimpimBites Cães</h4>
-                    <p>Sabor Carne Ao Molho Mágico. Saiba agora o que o seu melhor amigo tem para te dizer a anos.</p>
-                    <img src="assets/thumb-video.jpg">
-                    <span class="preco">R$54,99</span>
-                    <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
-                <article class="card-marinho">
-                    <span class="badge">O #1 dos marinhos</span>
-                    <h4>PimpimBites Tubarão</h4>
-                    <p>Sabor Abissal. Descubra que eles só querem um abraço (mas não arrisque).</p>
-                    <img src="assets/biscoito-tubarao.jpg">
-                    <span class="preco">R$79,90</span>
-                    <button class="btn-comprar">Adicionar ao carrinho</button>
-                    </article>
-                <artcile class="card-savana">
-                    <span class="badge">O #1 da savana</span>
-                    <h4>PimpimBites Leões</h4>
-                    <p>Sabor Carne da Savana Mística. Descubra se ele está realmente reinando ou apenas procurando o lugar ideal para a 18ª soneca do dia.</p>
-                    <img src="assets/biscoito-leao.jpg">
-                    <span class="preco">R$ 74,90</span>
-                    <button class="btn-comprar">Adicionar ao Carrinho</button>
-                    </article>
-                </section>
-        <section id="noticias" class="noticias-mundo-animal">
-            <div class="mundo-animal-titulo">
-            <h3>Radar Animal: O Que Eles Andam Aprontando</h3>
-            <div class="noticia-01">
-                <h4>titulo da materia</h4>
-                <p>manchete da materia<p>
-                <a href="https://site-de-destino.com" target="_blank">
-                    <img src="assets/imagem.jpg">
-                </a>
-            <div class="noticia-02">
-                <h4>titulo da materia</h4>
-                <p>manchete da materia<p>
-                <a href="https://site-de-destino.com" target="_blank">
-                    <img src="assets/imagem.jpg">
-                </a>
-            <div class="noticia-03">
-               <h4>titulo da materia</h4>
-                <p>manchete da materia<p>
-                <a href="https://site-de-destino.com"   target="_blank">
-                    <img src="assets/imagem.jpg">
-                     </a>
-            </section>
+                    <!-- Card morcegos -->
+                    <button class="card-produto">
+                        <h4>PimpimBites Morcegos</h4>
+                        <img src="assets/bisocito-morcego.jpg" alt="Biscoito PimpimBites para morcegos">
+                        <span class="preco">Disponível em breve</span>
+                    </button>
+        </section>
+
+            <section id="noticias" class="noticias-mundo-animal">
+    <div class="mundo-animal-titulo">
+        <h3>Notícias do Mundo Animal</h3>
+        <p>Radar Animal: O Que Eles Andam Aprontando</p>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+
+        <!-- NOTÍCIA 01 -->
+        <article class="noticia-card">
+            <div class="noticia-imagem">
+            <a href="https://www.metropoles.com/colunas/e-o-bicho/cao-idoso-resgatado-ganha-festa-para-comemorar-um-ano-de-chegada-a-familia" target="_blank" rel="noopener noreferrer">
+                <img src="assets/noticia1.png" alt="Cão idoso resgatado">
+            </a>
+            </div>
+            <div class="noticia-info">
+            <h4>Cão idoso resgatado ganha festa para comemorar um ano de chegada à família</h4>
+            <p>Gaspar, um cão idoso, vivia nas ruas da Argentina antes de ser adotado. Tutores fizeram festa para celebrar um ano da chegada do pet ao lar.</p>
+            <div class="noticia-meta">
+                <span>Radar Animal</span> • <span>há 2 horas</span>
+            </div>
+            </div>
+        </article>
+
+        <!-- NOTÍCIA 02 -->
+        <article class="noticia-card">
+            <div class="noticia-imagem">
+            <a href="https://www.metropoles.com/colunas/e-o-bicho/novo-pet-em-casa-veja-como-evitar-brigas-e-facilitar-a-adaptacao" target="_blank" rel="noopener noreferrer">
+                <img src="assets/noticia2.png" alt="Novo pet em casa">
+            </a>
+            </div>
+            <div class="noticia-info">
+            <h4>Novo pet em casa: veja como evitar brigas e facilitar a adaptação</h4>
+            <p>Chegada de um novo pet exige cuidados, apresentação em local neutro e adaptação gradual, que pode levar até 60 dias.</p>
+            <div class="noticia-meta">
+                <span>Radar Animal</span> • <span>há 4 horas</span>
+            </div>
+            </div>
+        </article>
+
+        <!-- NOTÍCIA 03 -->
+        <article class="noticia-card">
+            <div class="noticia-imagem">
+            <a href="https://www.metropoles.com/colunas/e-o-bicho/saiba-como-o-polvo-usa-seus-tres-coracoes-e-nove-cerebros-no-oceano" target="_blank" rel="noopener noreferrer">
+                <img src="assets/noticia3.png" alt="Polvo no oceano">
+            </a>
+            </div>
+            <div class="noticia-info">
+            <h4>Saiba como o polvo usa seus três corações e "nove cérebros" no oceano</h4>
+            <p>O polvo tem sangue azul, solta tinta para fugir de ataques e divide o comando do corpo entre a cabeça e os oito braços.</p>
+            <div class="noticia-meta">
+                <span>Radar Animal</span> • <span>há 6 horas</span>
+            </div>
+            </div>
+        </article>
+
+        </div>
+
+        <!-- Botões / Bolinhas Indicadoras -->
+        <div class="carousel-indicators">
+        <button class="indicator active" aria-label="Ir para notícia 1"></button>
+        <button class="indicator" aria-label="Ir para notícia 2"></button>
+        <button class="indicator" aria-label="Ir para notícia 3"></button>
+        </div>
+    </div>
+    </section>
         <section id="avaliacoes" class="avaliacoes-aba">
             <div class="apresentacao-avaliacao">
-                <h3>Aprovado por mais de 3 milhões de animais</h3>
-                <p>Avaliações reais feitas por animais(e seus donos)</p>
+                <h2>Avaliações</h2>
+                <p>Testes reais feitos por humanos (e seus donos)</p>
+            </div>
             <div class="grid-avaliacoes">
-                <div class="av1">
-                     <img src="assets/av1.png">
-                    <p>"Já faz quase 2 anos que nosso humano compra os petiscos mensalmente... Os petiscos deixam ele mais legal."</p>
+                <article class="card-avaliacao">
+                    <img src="assets/av1.jpg" alt="Foto de avaliação de Soussa">
+                    <h3>"Já faz quase 2 meses que nosso humano testa os petiscos semanalmente... Os petiscos deixam ele mais legal."</h3>
+                    <div class="dep">
                     <p>★★★★★</p>
-                    <h4>Pedro H.</h4>
-                <div class="av2">
-                    <img src="assets/av2.jpg">
-                    <p>"Felizmente, a PimPimBites não pesa no meu bolso, e ele recebe novos petiscos todos os meses!"</p>
+                    <h4>Soussa.</h4>
+                    <div></div>
+                </article>
+                <article class="card-avaliacao">
+                    <img src="assets/av2.jpg" alt="Foto de avaliação de Enzo M.">
+                    <h3>"Felizmente, a PimPimBites chegou em nossas vidas, agora nosso humano não esquece mais de limpar a casa"</h3>
+                    <div class="dep">
                     <p>★★★★★</p>
-                    <h4>Enzo M.</h4>
-                <div class="av3">
-                     <img src="assets/av3.jpg">
-                    <p>"O serviço de atendimento ao cliente nos ajudou a trocar os sabores em minutos."</p>
+                    <h4>Dodo M.</h4>
+                    </div>
+                    </article>
+                </article>
+                <article class="card-avaliacao">
+                    <img src="assets/av3.jpg" alt="Foto de avaliação de Alice A.">
+                    <h3>"O serviço de atendimento ao cliente nos ajudou a trocar os sabores em minutos."</h3>
+                    <div class="dep">
                     <p>★★★★★</p>
                     <h4>Alice A.</h4>
-            <div class="pq-escolher-pimpim">
-                <h3>Por que escolher a PimPimBites?</h3>
-                <p>A BarkBox é uma surpresa mensal que traz alegria e enriquecimento para a vida do seu cãozinho.</p>
-                <img src="assets/ft1.png">
-                <h4>Obsessão garantida</h4>
-                <p>Repleto de sabores irresistiveis, projetados e selecionados a dedo por especialistas e fadas.</p>
-                <img src="assets/ft2.png">
-                <h4>Conveniência absurda</h4>
-                <p>Entregamos a diversão perfeita diretamente na sua porta em dias.</p>
-                <img src="assets/ft3.png">
-                <h4>Traduções personalizadas</h4>
-                <p>Personalizado — desde negociar mais meia hora de sono com seu passarinho até entender os pedidos mais específicos do seu cão ou gato.</p>
-        <section id="nossa-historia" class="nossa-historia-section">
-            <div class="inicio-sobre-nos">
-                <h4>Nossa história</h4>
-                <h3>Como tudo começou</h3>
-                </div>
-            <div class="nossa_historia">
-                <h4>A história da Pimpim Bites não começou neste mundo. Tudo teve início quando a Dra. Pimpim atravessou o portal do Reino das Fadas com uma missão especial: trazer a magia do seu universo para a vida dos nossos animais de estimação.</h4>
-                <h4>Ao chegar aqui, o destino cruzou seu caminho com o da Senhorita Puff, uma talentosa confeiteira e veterinária apaixonada pelo bem-estar animal. Dessa união extraordinária surgiu a receita perfeita: o rigor da ciência veterinária, o afeto da alta confeitaria artesanal e, claro, um toque secreto do mais puro pó de fada.</h4>
-                <h4>Foi assim que nasceu a Pimpim Bites. Muito além de petiscos, criamos porções diárias de alegria, saúde e encanto para transformar o momento do seu pet em um ritual verdadeiramente mágico.</h4>
-                </div>
-        </main>
-    <footer>
-        <section>
-            <h3>ATENDIMENTO</h3>
-            <div class="contato">
-                <a href="mailto:j.bisneto@aln.senaicimatec.edu.br" class="item-contato">
-                    <img src="assets/gmail.png">
-                    <span>j.bisneto@aln.senaicimatec.edu.br</span>
-                </a>
-                <a href="https://wa.me/5575982187857" target="_blank" class="item-contato">
-                    <img src="assets/wpp.jpg">
-                    <span>55(75) 98218-7857 </span>
-                </a>
-            </div>
-            <h3>Formas DE PAGAMENTO</h3>
-            <div class="formas-pagamento">
-                <img src="assets/pix.png">
-                <img src="assets/visa.png">
-                <img src="assets/mastercard.png">
-                <img src="assets/elo.png">
-                <img src="assets/hipercard.png">
-                <img src="assets/boleto.png">
+                    </div>
+                </article>
+                <article class="card-avaliacao">
+                    <img src="assets/av4.jpg" alt="Foto de avaliação de Arthur Cu.">
+                    <h3>"Agora nosso humano não perde mais nenhum coffee-break!"</h3>
+                    <div class="dep">
+                    <p>★★★★★</p>
+                    <h4>Arthur C.</h4>
+                    </div>
+                </article>
             </div>
         </section>
-        </footer>
+    </main>
+    <footer class="rodape">
+  <div class="bloco-geral">
+    
+    <!-- Coluna 1: Atendimento -->
+    <div class="coluna">
+      <h3>Atendimento</h3>
+      
+      <a href="mailto:j.bisneto@aln.senaicimatec.edu.br" class="item-contato">
+        <img src="assets/gmail.png" alt="Ícone do Gmail">
+        <span>j.bisneto@aln.senaicimatec.edu.br</span>
+      </a>
+
+      <a href="https://wa.me/5575982187857" target="_blank" rel="noopener noreferrer" class="item-contato">
+        <img src="assets/wpp.jpg" alt="Ícone do WhatsApp">
+        <span>55 (75) 98218-7857</span>
+      </a>
+    </div>
+    
+    <!-- Coluna 2: Formas de pagamento -->
+    <div class="coluna">
+      <h3>Formas de pagamento</h3>
+      
+      <div class="pagamento-icones">
+        <img src="assets/pix.jpg" alt="Pix">
+        <img src="assets/visa.jpg" alt="Visa">
+        <img src="assets/mastercard.jpg" alt="Mastercard">
+        <img src="assets/elo.jpg" alt="Elo">
+        <img src="assets/bancodobrasil.jpg" alt="Banco do Brasil">
+        <img src="assets/boleto.jpg" alt="Boleto bancário">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="rodape-copyright">
+    <p>&copy; 2026 Pimpim Bites. Todos os direitos reservados.</p>
+  </div>
+</footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
