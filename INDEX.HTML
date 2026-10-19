@@ -18,7 +18,7 @@
                 <li class="dropdown">
                 <a href="#sabores" class="dropdown-link">Sabores ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#domesticos">Domesticos</a></li>
+                    <li><a href="#domesticos">Domésticos</a></li>
                     <li><a href="#marinhos">Marinhos</a></li>
                     <li><a href="#savana">Savana</a></li>
                     <li><a href="#voadores">Voadores</a></li>
@@ -37,7 +37,7 @@
                 <p class="hero-subtitulo">Uma experiência mágica vinda diretamente de outro mundo, com um sabor irresistível e um encanto que só nós podemos proporcionar. Venha experimentar nossos sabores únicos!</p>
                 <div class="hero-botoes">
                     <a href="#sabores" class="btn1">Garantir minha mordia</a>
-                    <a href="#nossa-historia" class="btn2">Nossa História</a>
+                    <a href="#noticias" class="btn2">Notícias</a>
                 </div>
             </div>
             <div class="hero-midia">
@@ -57,21 +57,21 @@
 
                 <div class="grid-produtos">
                     <!-- Card cachorro -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Carne Ao Molho Mágico. Saiba agora o que o seu melhor amigo tem para te dizer a anos.">
                         <h4>PimpimBites Cães</h4>
                         <img src="assets/thumb-video.jpg" alt="Imagem do produto PimpimBites Cães">
                         <span class="preco">Disponível em breve</span>
                     </button>
 
                     <!-- Card Gato -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Salmão Estelar. Entenda a ironia e as exigências do seu felino.">
                         <h4>PimpimBites Gatos</h4>
                         <img src="assets/biscoito-felino.jpg" alt="Biscoito PimpimBites para gatos">
                         <span class="preco">Disponível em breve</span>                    
                     </button>
                 </div>
             </section>
-            <div class="animais-marinhos">
+            <section id="marinhos" class="animais-marinhos">
                 <div class="titulo-categoria">
                     <h3>Animais Marinhos</h3>
                     <p>Conecte-se com as criaturas dos mares na sua próxima viagem à praia.</p>
@@ -79,26 +79,26 @@
 
                 <div class="grid-produtos">
                     <!--tubarao-->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Abissal. Descubra que eles só querem um abraço (mas não arrisque).">
                         <h4>PimpimBites Tubarão</h4>
                         <img src="assets/biscoito-tubarao.jpg" alt="Biscoito PimpimBites para tubarão">
                         <span class="preco">Disponível em breve</span>
                     </button>
                     <!--peixes-->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description=" Sabor Algas do Atlântico. Converse com os peixinhos do aquário ou da praia.">
                         <h4>PimpimBites Peixes</h4>
                         <img src="assets/biscoito-peixes.jpg" alt="Biscoito PimpimBites para peixes">
                         <span class="preco">Disponível em breve</span>
                     </button>
                     <!--golfinho-->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Maresia Mágica. Decodifique os cliques e assobios para ouvir as melhores fofocas e  piadas do oceano em tempo real.">
                         <h4>PimpimBites Golfinho</h4>
                         <img src="assets/biscoito-golfinho.jpg" alt="Biscoito PimpimBites para golfinho">
                         <span class="preco">Disponível em breve</span>
                     </button>
                 </div>
-            </div>
-            <div class="animais-savana">
+            </section>
+            <section id="savana" class="animais-savana">
                 <div class="titulo-categoria">
                     <h3>Animais da Savana</h3>
                     <p>Para bater um papo no safari, no zoológico ou numa grande aventura na natureza.</p>
@@ -106,29 +106,29 @@
 
                 <div class="grid-produtos">
                     <!-- Card Leão -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Carne da Savana Mística. Descubra se ele está realmente reinando ou apenas procurando o lugar ideal para a 18ª soneca do dia.">
                         <h4>PimpimBites Leões</h4>
                         <img src="assets/biscoito-leao.jpg" alt="Biscoito PimpimBites para leões">
                         <span class="preco">Disponível em breve</span>
                     </button>
 
                     <!-- Card Elefante -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Amendoim do Baobá. Aproveite a famosa memória de elefante para ouvir histórias incríveis de quem nunca esquece nada.">
                         <h4>PimpimBites Elefantes</h4>
                         <img src="assets/biscoito-elefante.jpg" alt="Biscoito PimpimBites para elefantes">
                         <span class="preco">Disponível em breve</span>
                     </button>
 
                     <!-- Card Girafa -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Broto de Acácia & Nuvens. Bata um papo com quem vê a vida de outro ângulo e saiba todas as fofocas do topo das árvores.">
                         <h4>PimpimBites Girafas</h4>
                         <img src="assets/biscoito-girafa.jpg" alt="Biscoito PimpimBites para girafas">
                         <span class="preco">Disponível em breve</span>
                     </button>
 
                 </div>
-            </div>
-            <div class="animais-voadores">
+            </section>
+            <section id="voadores" class="animais-voadores">
                 <div class="titulo-categoria">
                     <h3>Animais Voadores</h3>
                     <p>Para bater um papo no safari, no zoológico ou numa grande aventura na natureza.</p>
@@ -136,19 +136,28 @@
 
                 <div class="grid-produtos">
                     <!-- Card passarinhos -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Alpiste Celestial. Traduz os fius-fius em tempo real e saiba todas as fofocas da vizinhança vistas do alto.">
                         <h4>PimpimBites Passarinhos</h4>
                         <img src="assets/biscoito-passarinho.jpg" alt="Biscoito PimpimBites para passarinhos">
                         <span class="preco">Disponível em breve</span>
                     </button>
 
                     <!-- Card morcegos -->
-                    <button class="card-produto">
+                    <button class="card-produto" data-description="Sabor Sangue (100% Sintético). Traduz a frequência ultrassônica para você entender por que ele jura que 'é a noite' e quer salvar Gotham antes do amanhecer.">
                         <h4>PimpimBites Morcegos</h4>
                         <img src="assets/bisocito-morcego.jpg" alt="Biscoito PimpimBites para morcegos">
                         <span class="preco">Disponível em breve</span>
                     </button>
+                </div>
+            </section>
         </section>
+
+        <dialog class="produto-modal" id="produto-modal" aria-labelledby="produto-modal-titulo" aria-describedby="produto-modal-descricao">
+            <button class="produto-modal-fechar" type="button" aria-label="Fechar janela">&times;</button>
+            <img class="produto-modal-imagem" id="produto-modal-imagem" src="" alt="">
+            <h2 id="produto-modal-titulo"></h2>
+            <p id="produto-modal-descricao"></p>
+        </dialog>
 
             <section id="noticias" class="noticias-mundo-animal">
     <div class="mundo-animal-titulo">
@@ -227,33 +236,32 @@
                     <img src="assets/av1.jpg" alt="Foto de avaliação de Soussa">
                     <h3>"Já faz quase 2 meses que nosso humano testa os petiscos semanalmente... Os petiscos deixam ele mais legal."</h3>
                     <div class="dep">
-                    <p>★★★★★</p>
-                    <h4>Soussa.</h4>
-                    <div></div>
+                        <p>★★★★★</p>
+                        <h4>Soussa.</h4>
+                    </div>
                 </article>
                 <article class="card-avaliacao">
                     <img src="assets/av2.jpg" alt="Foto de avaliação de Enzo M.">
                     <h3>"Felizmente, a PimPimBites chegou em nossas vidas, agora nosso humano não esquece mais de limpar a casa"</h3>
                     <div class="dep">
-                    <p>★★★★★</p>
-                    <h4>Dodo M.</h4>
+                        <p>★★★★★</p>
+                        <h4>Dodo M.</h4>
                     </div>
-                    </article>
                 </article>
                 <article class="card-avaliacao">
                     <img src="assets/av3.jpg" alt="Foto de avaliação de Alice A.">
                     <h3>"O serviço de atendimento ao cliente nos ajudou a trocar os sabores em minutos."</h3>
                     <div class="dep">
-                    <p>★★★★★</p>
-                    <h4>Alice A.</h4>
+                        <p>★★★★★</p>
+                        <h4>Alice A.</h4>
                     </div>
                 </article>
                 <article class="card-avaliacao">
                     <img src="assets/av4.jpg" alt="Foto de avaliação de Arthur Cu.">
                     <h3>"Agora nosso humano não perde mais nenhum coffee-break!"</h3>
                     <div class="dep">
-                    <p>★★★★★</p>
-                    <h4>Arthur C.</h4>
+                        <p>★★★★★</p>
+                        <h4>Arthur C.</h4>
                     </div>
                 </article>
             </div>

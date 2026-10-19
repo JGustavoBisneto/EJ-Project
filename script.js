@@ -17,6 +17,47 @@ themeToggle.addEventListener('click', () => {
   localStorage.setItem('theme', nextTheme);
 });
 
+const productModal = document.querySelector('#produto-modal');
+const modalTitle = document.querySelector('#produto-modal-titulo');
+const modalImage = document.querySelector('#produto-modal-imagem');
+const modalDescription = document.querySelector('#produto-modal-descricao');
+const closeModalButton = document.querySelector('.produto-modal-fechar');
+
+document.querySelectorAll('.card-produto').forEach((card) => {
+  card.addEventListener('click', () => {
+    const title = card.querySelector('h4');
+    const image = card.querySelector('img');
+
+    modalTitle.textContent = title.textContent;
+    modalImage.src = image.getAttribute('src');
+    modalImage.alt = image.alt;
+    modalDescription.textContent = card.dataset.description;
+    productModal.showModal();
+  });
+});
+
+closeModalButton.addEventListener('click', () => {
+  productModal.close();
+});
+
+productModal.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    productModal.close();
+  }
+});
+
+productModal.addEventListener('click', (event) => {
+  const bounds = productModal.getBoundingClientRect();
+  const clickedOutside = event.clientX < bounds.left
+    || event.clientX > bounds.right
+    || event.clientY < bounds.top
+    || event.clientY > bounds.bottom;
+
+  if (clickedOutside) {
+    productModal.close();
+  }
+});
+
 // Seleciona o elemento do trilho que contém os cards
 const track = document.querySelector('.carousel-track');
 
